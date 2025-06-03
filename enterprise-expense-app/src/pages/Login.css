@@ -1,0 +1,180 @@
+/* Same style as signup for consistency */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-left {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #eee;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #1976d2;
+}
+
+.login-right {
+  flex: 1;
+  background: #f7f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-card {
+  background: #fff;
+  padding: 40px 40px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-card input[type="email"],
+.login-card input[type="password"] {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  justify-content: flex-start;
+}
+
+.login-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.forgot-link {
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: right;
+}
+
+.login-btn:hover {
+  background-color: #125ab3;
+}
+
+.social-login {
+  margin-top: 25px;
+}
+
+.social-login p {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.social-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+.social-buttons button:hover{
+  background-color: #1976d2;
+  color: #f7f9fc;
+  transition: 1s ease;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.footer-text {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  .signup-page, .login-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .signup-left, .login-left {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    font-size: 24px;
+  }
+
+  .signup-right, .login-right {
+    padding: 20px;
+  }
+
+  .signup-card, .login-card {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+
+  .social-buttons button {
+    width: 100%;
+  }
+
+  .signup-card input,
+  .login-card input,
+  .signup-btn,
+  .login-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
